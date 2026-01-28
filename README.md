@@ -13,6 +13,11 @@ then you can run tests from this project's root:
 ./tests/run_tests.sh
 ```
 
+If you lack some dependencies like c8 you can run the minimal version
+```bash
+./tests/run_tests_minimal.sh
+```
+
 # examples:
 
 - Green bar:
