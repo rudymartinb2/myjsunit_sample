@@ -18,6 +18,8 @@ If you lack some dependencies like c8 you can run the minimal version
 ./tests/run_tests_minimal.sh
 ```
 
+Also: the goal of ```./tests/autoruntests.sh``` is to keep it running on a virtual terminal while working with your IDE (my choice is Netbeans). If you have ```inotify-tools``` installed you can run the tests each time you save the files on disk.
+
 # examples:
 
 - Green bar:
