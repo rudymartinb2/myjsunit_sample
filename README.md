@@ -26,10 +26,28 @@ If you lack some dependencies like c8 you can run the minimal version
 - Red bar:
 ![bad](/img/bad.png)
 
+usually when I start a new test file I import ```TestBad``` from myjsunit, so the test will fail even with no test methods. And that tells me the test file has been added to the suit correctly. Like this:
+
+```javascript
+/* MyBad_Test 
+ * RMB Jan 28, 2026 
+ * 
+ * I use code like this when setting up a new test file,
+ * just to ensure it is working as intended: it should fail
+ */
+
+import { Test, TestBad } from 'myjsunit';
+class MyBad_Test extends TestBad {
+
+}
+
+export { MyBad_Test }
+```
+
 - Oragen bar (tests .done() but without assertions):
 ![risky](/img/risky.png)
 
 - No  bar (tests without .done() call):
 ![notdone](/img/notdone.png)
 
-
+normal scenario for this to happen: .done() inside a callback and it does not get invoked at all.
